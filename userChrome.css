@@ -3,9 +3,6 @@
         flex: 1 1 100% !important;
         max-width: 50% !important;
     }
-    #urlbar-container {
-        flex: 0 0 275px !important;
-    }
 }
 
 #userContext-indicator, #userContext-label{
@@ -154,7 +151,7 @@ toolbar .toolbaritem-combined-buttons {
   pointer-events: auto; /* Prevent interactions when not allowed */
   padding-top: 0px !important;
   transform: scale(.75, .75);
-  margin-bottom: 5px !important;
+  padding-bottom: 7px !important;
 
 }
 
@@ -447,12 +444,7 @@ toolbar .toolbaritem-combined-buttons {
      }
 } 
 
-/* Reduce width */
-@media (-moz-bool-pref: "zen.view.sidebar-expanded") {  
-    #navigator-toolbox {
-      --zen-toolbox-min-width: 163px !important;
-   }
- }
+
 
 .urlbar-page-action, #urlbar-zoom-button {
   margin-top: -1px !important;
