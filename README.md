@@ -28,7 +28,7 @@ To use this theme, set the Zen URL Bar behavior to `Always Floating`:
 ### Single Toolbar Mode
 If you’re using Single Toolbar Mode, make sure to set `zen.view.hide-window-controls` in `about:config` to `false`:
 <details>
-  <summary>How to configure Single Toolbar Mode</summary>
+  <summary>How to configure</summary>
   
   ![Single Toolbar Mode](https://github.com/user-attachments/assets/3e6e931c-a038-475f-ad8d-22f6c7645dda)
 </details>
