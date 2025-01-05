@@ -18,5 +18,5 @@ Special thanks to [neurokitti](https://github.com/neurokitti) and [KiKaraage](ht
 ![Screenshot 3](https://github.com/ikoshura/Mori-Zen-Theme/blob/main/Assets/Screenshot3.png)  
 ![Screenshot 4](https://github.com/ikoshura/Mori-Zen-Theme/blob/main/Assets/Screenshot4.png)
 
-## Old Mori (Finito) for Single Toolbar Mode
+## Finito (Old Mori) for Single Toolbar Mode
 ![Finito](https://github.com/ikoshura/Mori-Zen-Theme/blob/main/Assets/Screenshot5.png)
