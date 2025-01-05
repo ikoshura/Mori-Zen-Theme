@@ -1,34 +1,52 @@
 # Mori-Zen-Theme
 
-The default Zen sidebar and top bar take up too much space, so I created a thinner, more compact design.
+A minimalistic and compact design for Zen Browser.
 
-To learn how to apply custom CSS, refer to the [Zen documentation](https://docs.zen-browser.app/guides/live-editing)
+## Overview
+The default Zen Browser sidebar and top bar take up too much space, so I designed Mori to provide a thinner and more compact layout.
 
-This theme is built on top of [Arc_Zen_Theme](https://github.com/neurokitti/Arc_Zen_Theme/tree/main) and [ZenMods](https://github.com/KiKaraage/ZenMods/tree/main/%5BSetup%5D%20Arc%20Mode%20on%20Zen)
+### References
+- Learn how to apply custom CSS in the [Zen documentation](https://docs.zen-browser.app/guides/live-editing).
+- This theme is based on:
+  - [Arc_Zen_Theme](https://github.com/neurokitti/Arc_Zen_Theme/tree/main)
+  - [ZenMods](https://github.com/KiKaraage/ZenMods/tree/main/%5BSetup%5D%20Arc%20Mode%20on%20Zen)
 
-Special thanks to [neurokitti](https://github.com/neurokitti) and [KiKaraage](https://github.com/KiKaraage)
+Special thanks to:
+- [neurokitti](https://github.com/neurokitti)
+- [KiKaraage](https://github.com/KiKaraage)
 
-> **Note:** For using this theme you need to set Zen URL Bar behavior to `Always Floating`
-   <details closed>
-      
-   > ![zenurlbar](https://github.com/user-attachments/assets/b30fa53e-eea8-4148-818e-ef902eaf7597)
+## Requirements
+
+### Zen URL Bar Behavior
+To use this theme, set the Zen URL Bar behavior to `Always Floating`:
+<details>
+  <summary>How to set Zen URL Bar behavior</summary>
   
-   </details>
+  ![Zen URL Bar](https://github.com/user-attachments/assets/b30fa53e-eea8-4148-818e-ef902eaf7597)
+</details>
 
-Also you need [MicaForEveryone](https://github.com/MicaForEveryone/MicaForEveryone) to enable Mica Effect in Windows 11
-   
-   Enable Mica Effect:
+### Single Toolbar Mode
+If you’re using Single Toolbar Mode, make sure to set `zen.view.hide-window-controls` in `about:config` to `false`:
+<details>
+  <summary>How to configure Single Toolbar Mode</summary>
+  
+  ![Single Toolbar Mode](https://github.com/user-attachments/assets/3e6e931c-a038-475f-ad8d-22f6c7645dda)
+</details>
+
+### Enable Mica Effect (Windows 11)
+To enhance the aesthetic with the Mica effect, you’ll need [MicaForEveryone](https://github.com/MicaForEveryone/MicaForEveryone):
+
 1. Install [MicaForEveryone](https://github.com/MicaForEveryone/MicaForEveryone).
-2. open Zen Browser
+2. Open Zen Browser.
 3. Add **zen** to the **MicaForEveryone** process rules.
 4. Restart Zen Browser to apply changes.
 
 ## Screenshots
 
-![Screenshot 1](https://github.com/ikoshura/Mori-Zen-Theme/blob/main/Assets/Screenshot1.png)  
-![Screenshot 2](https://github.com/ikoshura/Mori-Zen-Theme/blob/main/Assets/Screenshot.png)  
-![Screenshot 3](https://github.com/ikoshura/Mori-Zen-Theme/blob/main/Assets/Screenshot3.png)  
-![Screenshot 4](https://github.com/ikoshura/Mori-Zen-Theme/blob/main/Assets/Screenshot4.png)
+| Screenshot | Description |
+|------------|-------------|
+| ![Screenshot 1](https://github.com/ikoshura/Mori-Zen-Theme/blob/main/Assets/Screenshot1.png) | Multiple toolbars |
+| ![Screenshot 2](https://github.com/ikoshura/Mori-Zen-Theme/blob/main/Assets/Screenshot.png) | Floating URL Bar |
+| ![Screenshot 3](https://github.com/ikoshura/Mori-Zen-Theme/blob/main/Assets/Screenshot3.png) | Collapsed toolbar |
+| ![Screenshot 4](https://github.com/ikoshura/Mori-Zen-Theme/blob/main/Assets/Screenshot4.png) | Compact Mode |
 
-## Finito (Old Mori) for Single Toolbar Mode
-![Finito](https://github.com/ikoshura/Mori-Zen-Theme/blob/main/Assets/Screenshot5.png)
