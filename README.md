@@ -18,6 +18,14 @@ Special thanks to [neurokitti](https://github.com/neurokitti) and [KiKaraage](ht
   
    </details>
 
+Also you need [MicaForEveryone](https://github.com/MicaForEveryone/MicaForEveryone) to enable Mica Effect in Windows 11
+   
+   Enable Mica Effect:
+1. Install [MicaForEveryone](https://github.com/MicaForEveryone/MicaForEveryone).
+2. open Zen Browser
+3. Add **zen** to the **MicaForEveryone** process rules.
+4. Restart Zen Browser to apply changes.
+
 ## Screenshots
 
 ![Screenshot 1](https://github.com/ikoshura/Mori-Zen-Theme/blob/main/Assets/Screenshot1.png)  
