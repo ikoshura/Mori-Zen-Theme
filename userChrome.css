@@ -125,11 +125,7 @@ toolbar .toolbaritem-combined-buttons {
   padding-top: 0px !important;
   /*fill: white !important;*/
   transform: scale(.75, .75);
-  transition: opacity 0.25s;
   background: transparent !important;
-  &:not(:hover) {
-  opacity: 0;
-}
 }
 
 
