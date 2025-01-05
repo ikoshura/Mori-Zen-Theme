@@ -11,6 +11,14 @@
   /*display: none !important;*/
 }
 
+#urlbar-search-mode-indicator-title {
+  padding-bottom: 7px !important;;
+}
+
+#urlbar-search-mode-indicator-close, #searchmode-switcher-close {
+  margin-bottom: 5px
+}
+
 /* Scaled down toolbar buttons */
 .toolbarbutton-1:not(#tabs-newtab-button) {
   transform: scale(.75, .75); /* adjust scale to your preference */
