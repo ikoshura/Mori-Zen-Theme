@@ -1,4 +1,4 @@
-# Mori-Zen-Theme
+# Mori Zen Theme
 
 A minimalistic and compact theme for Zen Browser.
 
