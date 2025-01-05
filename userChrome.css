@@ -133,6 +133,7 @@ toolbar .toolbaritem-combined-buttons {
 #star-button-box,
 #picture-in-picture-button,
 #reader-mode-button,
+#translations-button,
 #unified-extensions-button {
   visibility: visible !important;
   opacity: 0.7; /* Adjust opacity to make them look disabled */
@@ -157,12 +158,6 @@ toolbar .toolbaritem-combined-buttons {
 
 }
 
-
-
-/* Hide some buttons in the URL bar */
-#urlbar-zoom-button, #translations-button {
-  display: none !important;
-}
 
 
 #tracking-protection-icon-container {
@@ -460,7 +455,7 @@ toolbar .toolbaritem-combined-buttons {
  }
 
 
-.urlbar-page-action {
+.urlbar-page-action, #urlbar-zoom-button {
   margin-top: -1px !important;
   margin-bottom: 5px !important;
   opacity: 0.7; /* Adjust opacity to make them look disabled */
@@ -468,7 +463,5 @@ toolbar .toolbaritem-combined-buttons {
   pointer-events: auto; /* Prevent interactions when not allowed */
   padding-top: 0px !important;
   transition: opacity 0.25s;
-  &:not(:hover) {
-  opacity: 0;
 }
 }
