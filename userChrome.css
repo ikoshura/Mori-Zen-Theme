@@ -210,14 +210,14 @@ toolbar .toolbaritem-combined-buttons {
 /* URL bar go button visibility */
 .urlbar-go-button {
   align-self: center !important;
-  opacity: 0 !important;
+  opacity: 0.7 !important;;
+  transform: scale(.75, .75);
   background: transparent !important;
-  margin-right: 6px !important;
-  display: none !important;
+  margin-bottom: 6px !important;
 }
 
 .urlbar-go-button:hover {
-  opacity: 0.5 !important;
+  opacity: 1 !important;
 }
 
 
