@@ -464,4 +464,12 @@ toolbar .toolbaritem-combined-buttons {
   padding-top: 0px !important;
   transition: opacity 0.25s;
 }
+
+#urlbar-zoom-button {
+  margin-bottom: 2px !important;
+  opacity: 0.7; /* Adjust opacity to make them look disabled */
+  margin-bottom: 5px !important
+  pointer-events: auto; /* Prevent interactions when not allowed */
+  padding-top: 0px !important;
+  transition: opacity 0.25s;
 }
