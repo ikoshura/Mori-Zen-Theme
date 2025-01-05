@@ -11,6 +11,13 @@ This theme is built on top of [Arc_Zen_Theme](https://github.com/neurokitti/Arc_
 
 Special thanks to [neurokitti](https://github.com/neurokitti) and [KiKaraage](https://github.com/KiKaraage)
 
+> **Note:** For using this theme you need to set Zen URL Bar begaviour to `Always Floating`
+   <details closed>
+      
+   > ![zenurlbar](https://github.com/user-attachments/assets/b30fa53e-eea8-4148-818e-ef902eaf7597)
+  
+   </details>
+
 ## Screenshots
 
 ![Screenshot 1](https://github.com/ikoshura/Mori-Zen-Theme/blob/main/Assets/Screenshot1.png)  
