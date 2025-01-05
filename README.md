@@ -1,9 +1,9 @@
 # Mori-Zen-Theme
 
-A minimalistic and compact design for Zen Browser.
+A minimalistic and compact theme for Zen Browser.
 
 ## Overview
-The default Zen Browser sidebar and top bar take up too much space, so I designed Mori to provide a thinner and more compact layout.
+The default Zen Browser sidebar and top bar take up too much space, so I make Mori to provide a thinner and more compact layout for Zen.
 
 ### References
 - Learn how to apply custom CSS in the [Zen documentation](https://docs.zen-browser.app/guides/live-editing).
