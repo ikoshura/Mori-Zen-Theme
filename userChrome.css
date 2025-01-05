@@ -1,0 +1,449 @@
+#nav-bar-customization-target {
+    toolbarspring {
+        flex: 1 1 100% !important;
+        max-width: 50% !important;
+    }
+    #urlbar-container {
+        flex: 0 0 275px !important;
+    }
+}
+
+#userContext-indicator, #userContext-label{
+  margin-bottom: 5px !important;
+  transform: scale(.75, .75);
+  /*display: none !important;*/
+}
+
+/* Scaled down toolbar buttons */
+.toolbarbutton-1:not(#tabs-newtab-button) {
+  transform: scale(.75, .75); /* adjust scale to your preference */
+}
+
+/* Rounded URL bar */
+#urlbar:is([focused], [open]) > #urlbar-background {
+  border-radius: 15px !important;
+  border: none !important;
+  background-color: #090909 !important; /*comment this line before activate blurred url bar*/
+}
+
+/*Blurred url bar (uncomment to activate)*/
+
+/*
+
+  #urlbar[open] > #urlbar-background{
+  backdrop-filter: blur(28px);
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAAEEfUpiAAAABmJLR0QABgALAB6AWZxdAAADT0lEQVRYw3WWbW8UMQyEHzu5viB+NBISAv5thQptbzfhi3NMh/Sk1e7eJvbYM7YTwA9gAlfgsQNPQAc+Ac8JfAYSeAZaAgN4BRpwBPAVeAQCuPb6GnWNXluOumfW3t/APTAD+FIYLvUx6/kE5jJBLcr68FrgH3qtTuAF+CXvLFQBvFVk14rysYAdAXwvs5daeJHn3gvxCTyU2Vnvx4rzENQL9LXuZxagN/79rgUYoPVasGJ/LYuPmodWFp5qYS8LSb3MuqLeL/XOskBZuZdwO/AHiMXnWaiXlTsJN8R1rATW97bwKIyzIm1CyZAsnLq2C94uH1JEleXxxVBOYGRxfDEvTZRzlY1Lj2etu1tpXihWbC+8/01BtK4b7EX9lPiGfL+I12mGz2VglVuX50NCWSyshC5EN6UcsmElSL1mUYsYn0AG8FOqtkmiDqHzTqtMBDWXDg7J/kU8pXCfIrhR+m5d4KgahySsmYDW/7ccHELLFNghCUU2D0EYXSjpYrnJfW08pDbWL9LEMjdwhyT0kNzM5VVjVAT637RQb7lRfkMMpnkP6QMhrPUuHpDEqcdr3R+MoSuQXbg/rFl44awCS0ny2cvSjVfRg9bAFKRD2Dm7lPGQpA3ZnKJCr8bmXahJVboe0hTKGg1aJKtw3gRJs3zMnRK1bLWkU/5rUkSrZqJLltXDmibexpQBVj/4JtkdGwpTchCy7tSaEJRhxTmsDWih0qWfKgjM+ZSNY9Os09iPjc0p+5cqUvvR3BS1RpveCWzYhfA0BMTYgJ1+kJqmkLaJTnkeNkCnjXIsCGyg3Ox5lWmU6jgtimYAhh2fPJshitasZP8grVOlbvNFeT6tB2uUQ7IZVi2pU+DelOrtAjurhEWnUbLJmg9Gveh1HTYQdBiG9LSPVD3sTNREGyEB+jEwu82+YQ6QZpubqF1YwwTsv/8o7hJ52rFobJQ8TaRzw+8uAO0pam90izw2opqm8DCadtrwKTs/6iHdTkwIkGb86nAI0Q+bfjFMU7Gh7l0f0A6lZyGdyC4+L0kXcJrD3HTa8AiGjcawmh+bA0zYc5rwDuNdgd3GaUgpTut47QOAO269BIeUuWskF4A0EIel9dw0mHPDaW5E2URTWHcF4C/jKqMV1zs6FwAAAABJRU5ErkJggg==) no-repeat !important ;
+  background-position-y: var(--urlbar-toolbar-height) !important;
+  background-size: cover !important;
+  border-color: transparent !important;
+}
+.urlbarView{ margin-inline: 0px !important; width: 100% !important; }
+.urlbarView-body-inner{ border: none !important }
+.urlbarView-row-inner{ border-radius: 0px !important; }
+
+*/
+
+/* Adjust URL bar appearance */
+.urlbarView {
+  margin-inline: 0 !important;
+  width: 100% !important;
+}
+
+.urlbarView-body-inner {
+  border: none !important;
+}
+
+.urlbarView-row-inner {
+  border-radius: 0 !important;
+}
+
+/* Transparent navigator toolbox */
+#navigator-toolbox {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+/* Darker Mica */
+/*#main-window {
+  background-color: rgba(0, 0, 0, 0.25) !important;
+  -moz-appearance: none !important;
+  background-image: none !important;
+  --zen-main-browser-background: rgba(0, 0, 0, 0.45) !important;
+}
+*/
+
+/* Button spacing */
+#zen-sidepanel-button,
+#back-button,
+#forward-button,
+#reload-button,
+#PanelUI-menu-button {
+  margin-bottom: 5px !important;
+}
+
+/* Compact titlebar buttons */
+.titlebar-button > .toolbarbutton-icon {
+  height: 9px !important;
+  min-height: 9px !important;
+  width: 9px !important;
+  min-width: 9px !important;
+}
+
+/* Light and dark theme icon brightness */
+@media (prefers-color-scheme: light) {
+  :root {
+    --icon-brightness: 0 !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --icon-brightness: 1 !important;
+  }
+}
+
+/* URL bar container padding */
+#urlbar-container {
+  padding-block: 0 !important;
+  background: none !important;
+  background-color: none !important;
+}
+
+#zen-split-views-button {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 0.7; /* Adjust opacity to make them look disabled */
+  pointer-events: auto; /* Prevent interactions when not allowed */
+  padding-top: 0px !important;
+  /*fill: white !important;*/
+  transform: scale(.75, .75);
+  transition: opacity 0.25s;
+  background: transparent !important;
+  &:not(:hover) {
+  opacity: 0;
+}
+}
+
+/* Specific icon adjustments */
+#star-button-box,
+#picture-in-picture-button,
+#reader-mode-button,
+#unified-extensions-button {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 0.7; /* Adjust opacity to make them look disabled */
+  pointer-events: auto; /* Prevent interactions when not allowed */
+  padding-top: 0px !important;
+  transform: scale(.75, .75);
+  transition: opacity 0.25s;
+  background: transparent !important;
+  &:not(:hover) {
+  opacity: 0;
+}
+}
+
+/* Specific icon adjustments 2*/
+#identity-icon-box,
+#identity-permission-box{
+  display: block !important;
+  visibility: visible !important;
+  opacity: 0.7; /* Adjust opacity to make them look disabled */
+  pointer-events: auto; /* Prevent interactions when not allowed */
+  padding-top: 4px !important;
+  transform: scale(.75, .75);
+  transition: opacity 0.25s;
+  background: transparent !important;
+  &:not(:hover) {
+  opacity: 0;
+    }
+  }
+
+
+/* Hide some buttons in the URL bar */
+#urlbar-zoom-button, #translations-button {
+  display: none !important;
+}
+
+
+#tracking-protection-icon-container {
+  align-self: center !important;
+  display: none !important;
+}
+
+/* Streamlined breakout URL bar */
+#urlbar-search-mode-indicator {
+  background: transparent !important;
+}
+
+/* Reader-friendly row adjustments */
+.urlbarView-row {
+  border-radius: 8px !important;
+}
+
+/* Compact input container */
+.urlbar-input-container {
+  padding: 0 3.5px !important;
+}
+
+/* Styled URL bar input */
+#urlbar-input {
+  font-size: 12px !important;
+  line-height: 14px !important;
+  padding-bottom: 8.5px !important;
+}
+
+.urlbar-input div {
+  display: inline-block;
+  width: auto;
+}
+
+/* URL bar go button visibility */
+.urlbar-go-button {
+  align-self: center !important;
+  opacity: 0 !important;
+  background: transparent !important;
+  margin-right: 6px !important;
+  display: none !important;
+}
+
+.urlbar-go-button:hover {
+  opacity: 0.5 !important;
+}
+
+
+/* Customize URL bar background when not focused or extended */
+#urlbar:not([focused="true"]):not([breakout-extend="true"]) > #urlbar-background {
+  background: none !important;
+  background-color: none !important;
+  margin: 100px !important;
+  border: transparent !important;
+  box-shadow: none !important;
+
+}
+
+/* Adjust URL bar input field styles */
+#urlbar-input {
+  font-size: 12px !important;
+  line-height: 14px !important;
+  padding-bottom: 8.5px !important;
+}
+
+/* Center align URL bar text */
+.urlbar-input {
+  text-align: center !important;
+  display: inline-block;
+  opacity: 0.7
+}
+
+/* Adjust divs within URL bar */
+.urlbar-input div {
+  display: inline-block;
+  width: auto;
+  white-space: nowrap;
+  padding: 5px;
+}
+
+/* Minimize padding and margin for title bar buttons */
+#titlebar-buttonbox {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+/* Adjust height for sidebar top buttons */
+#zen-sidebar-top-buttons {
+  height: 32px !important;
+  min-height: 32px !important;
+}
+
+/* Adjust navbar height and padding */
+#nav-bar {
+  height: 32px !important;
+  min-height: 32px !important;
+  padding: 0 !important;
+}
+
+/* Vertical pinned tabs adjustments */
+#vertical-pinned-tabs-container {
+  padding-top: 0px !important;
+  margin-top: 0px !important;
+}
+
+/* Fine-tune title bar button spacing */
+.titlebar-button {
+  padding-top: 8px !important;
+  margin-bottom: 6px !important;
+}
+
+/* Adjust tab browser tab box spacing */
+#tabbrowser-tabbox {
+  padding-top: 0px !important;
+  margin-top: -6px !important;
+}
+
+/* Adjust main menu button size and padding */
+#PanelUI-menu-button {
+  transform: scale(.8,.8); /* Adjust scale */
+  padding-right: 0px !important;
+  padding-left: 6px !important;
+}
+
+/* Enhance Zen workspace icons */
+.zen-workspace-icon {
+  filter: brightness(0.7) !important;
+  opacity: 1 !important;
+}
+
+/* Style for active workspace icons */
+.subviewbutton[tooltiptext][active="true"] .zen-workspace-icon {
+  visibility: visible;
+  filter: brightness(0.7) !important;
+  opacity: 1 !important;
+  width: auto !important;
+  height: auto !important;
+  background-color: transparent !important;
+  border-radius: 0;
+  transform: scale(1.4); 
+}
+
+/* Style for hovered workspace icons */
+.subviewbutton[tooltiptext]:not([active="true"]):hover .zen-workspace-icon {
+  visibility: visible !important;
+  filter: brightness(0.7) !important;
+  transform: scale(1.2);
+  opacity: 1 !important;
+}
+
+/* Hide icon effects on hover */
+.subviewbutton[tooltiptext]:not([active="true"]):hover
+  .zen-workspace-icon::after {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+/* Customize Zen workspaces button */
+#zen-workspaces-button {
+  container-name: workspaces;
+  container-type: inline-size;
+  display: block;
+  width: 100%;
+  max-height: min-content;
+  background: transparent !important;
+}
+
+/* Adjust icon visibility based on container width */
+@container workspaces (width < 100px) {
+  .subviewbutton[tooltiptext]:not([active="true"]):not(:hover) {
+    width: 8px !important;
+    padding: 0px;
+  }
+
+  .subviewbutton[tooltiptext]:not([active="true"]):not(:hover)
+    .zen-workspace-icon {
+    visibility: hidden;
+    position: relative;
+    padding: 0;
+    width: 5px !important;
+    height: 5px !important;
+    padding: 0px;
+  }
+
+  .subviewbutton[tooltiptext]:not([active="true"]) .zen-workspace-icon::after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: visible !important;
+    z-index: 1;
+    padding: 0;
+  }
+}
+
+/* Enable flexbox for workspace button resizing */
+#zen-workspaces-button {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+/* Style toolbar buttons */
+#zen-workspaces-button .subviewbutton {
+  flex: 1;
+  min-width: 5px;
+  max-width: 100px;
+  height: auto;
+  padding: 4px;
+  margin: 2px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+/* Adjust icon size based on button size */
+#zen-workspaces-button .subviewbutton .zen-workspace-icon {
+  transition: font-size 0.3s ease;
+}
+
+/* Adjust Panel UI menu button styling */
+#PanelUI-menu-button {
+  scale: 1.1;
+  filter: brightness(var(--icon-brightness)) !important;
+}
+
+/* Customize link copying extension icon */
+#pageAction-urlbar-copy-frame-url_jeffersonscher_com {
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/copy_link.svg") !important;
+  scale: 0.75;
+  filter: brightness(var(--icon-brightness)) !important;
+}
+
+/* Sidebar expand button icon */
+#zen-sidepanel-button {
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/sidebar.svg") !important;
+  scale: 1;
+  margin-left: 1px !important;
+  filter: brightness(var(--icon-brightness)) !important;
+}
+
+/* History button icon */
+#history-panelmenu {
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/archive.svg") !important;
+  padding-inline-start: 3px !important;
+  height: 100 !important;
+  filter: brightness(var(--icon-brightness)) !important;
+}
+
+/* Back button icon */
+#back-button {
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/back.svg") !important;
+  filter: brightness(var(--icon-brightness)) !important;
+}
+
+/* Forward button icon */
+#forward-button {
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/next.svg") !important;
+  filter: brightness(var(--icon-brightness)) !important;
+}
+
+/* Reload button icon */
+#reload-button {
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/refresh.svg") !important;
+  filter: brightness(var(--icon-brightness)) !important;
+}
+
+/* Reduced height */
+ @media (-moz-bool-pref: "zen.view.compact") {
+     #navigator-toolbox {
+         margin-top: 26px !important;
+     }
+} 
+
+/* Reduce width */
+@media (-moz-bool-pref: "zen.view.sidebar-expanded") {  
+    #navigator-toolbox {
+      --zen-toolbox-min-width: 163px !important;
+   }
+ }
