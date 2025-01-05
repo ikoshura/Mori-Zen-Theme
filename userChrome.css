@@ -454,7 +454,6 @@ toolbar .toolbaritem-combined-buttons {
    }
  }
 
-
 .urlbar-page-action, #urlbar-zoom-button {
   margin-top: -1px !important;
   margin-bottom: 5px !important;
@@ -466,9 +465,8 @@ toolbar .toolbaritem-combined-buttons {
 }
 
 #urlbar-zoom-button {
-  margin-bottom: 2px !important;
+  margin-bottom: 4px !important;
   opacity: 0.7; /* Adjust opacity to make them look disabled */
-  margin-bottom: 5px !important
   pointer-events: auto; /* Prevent interactions when not allowed */
   padding-top: 0px !important;
   transition: opacity 0.25s;
