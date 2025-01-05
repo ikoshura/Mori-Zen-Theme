@@ -128,39 +128,35 @@ toolbar .toolbaritem-combined-buttons {
 }
 }
 
+
 /* Specific icon adjustments */
 #star-button-box,
 #picture-in-picture-button,
 #reader-mode-button,
 #unified-extensions-button {
-  display: block !important;
   visibility: visible !important;
   opacity: 0.7; /* Adjust opacity to make them look disabled */
+  margin-bottom: 5px !important;
   pointer-events: auto; /* Prevent interactions when not allowed */
   padding-top: 0px !important;
   transform: scale(.75, .75);
-  transition: opacity 0.25s;
-  background: transparent !important;
-  &:not(:hover) {
-  opacity: 0;
-}
+
 }
 
 /* Specific icon adjustments 2*/
 #identity-icon-box,
 #identity-permission-box{
-  display: block !important;
+  background: none !important;
+  background-color: none !important;
   visibility: visible !important;
   opacity: 0.7; /* Adjust opacity to make them look disabled */
   pointer-events: auto; /* Prevent interactions when not allowed */
-  padding-top: 4px !important;
+  padding-top: 0px !important;
   transform: scale(.75, .75);
-  transition: opacity 0.25s;
-  background: transparent !important;
-  &:not(:hover) {
-  opacity: 0;
-    }
-  }
+  margin-bottom: 5px !important;
+
+}
+
 
 
 /* Hide some buttons in the URL bar */
@@ -170,8 +166,18 @@ toolbar .toolbaritem-combined-buttons {
 
 
 #tracking-protection-icon-container {
-  align-self: center !important;
   display: none !important;
+  visibility: visible !important;
+  opacity: 0.7; /* Adjust opacity to make them look disabled */
+  pointer-events: auto; /* Prevent interactions when not allowed */
+  background: none !important;
+  background-color: none !important;
+  margin-top: -2px !important;
+  transform: scale(.75, .75);
+  transition: opacity 0.25s;
+  &:not(:hover) {
+  opacity: 0;
+    }
 }
 
 /* Streamlined breakout URL bar */
@@ -452,3 +458,17 @@ toolbar .toolbaritem-combined-buttons {
       --zen-toolbox-min-width: 163px !important;
    }
  }
+
+
+.urlbar-page-action {
+  margin-top: -1px !important;
+  margin-bottom: 5px !important;
+  opacity: 0.7; /* Adjust opacity to make them look disabled */
+  margin-bottom: 5px !important
+  pointer-events: auto; /* Prevent interactions when not allowed */
+  padding-top: 0px !important;
+  transition: opacity 0.25s;
+  &:not(:hover) {
+  opacity: 0;
+}
+}
