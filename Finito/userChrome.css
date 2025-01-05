@@ -1,0 +1,252 @@
+#back-button, #forward-button, #reload-button {
+  transform: scale(.8,.8); /* adjust scale number to your needs */
+}
+
+#zen-sidepanel-button {
+  transform: scale(.9,.9); /* adjust scale number to your needs */
+}
+
+.titlebar-button>.toolbarbutton-icon {
+  height: 9px !important;
+  min-height: 9px !important;
+  width: 9px !important;
+  min-width: 9px !important;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --icon-brightness: 0 !important; /* Adjust for light mode */
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --icon-brightness: 1 !important; /* Adjust for dark mode */
+  }
+}
+
+#identity-icon-box, #identity-permission-box, #star-button-box, #tracking-protection-icon-container {
+  display: none !important;
+}
+
+
+#urlbar-input {
+  font-size: 13px !important;
+  line-height: 14px !important;
+}
+
+.urlbar-input {
+  text-align: center !important;
+}
+
+.urlbar-input {
+  display: inline-block;
+}
+
+.urlbar-input div {
+  display: inline-block;
+  width: auto;
+  white-space: nowrap;
+  padding: 5px;
+}
+
+#titlebar-buttonbox {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+#zen-sidebar-top-buttons {
+  height: 32px !important;
+  min-height: 32px !important;
+}
+
+#nav-bar {
+  height: 32px !important;
+  min-height: 32px !important;
+  padding: 0 !important;
+}
+#urlbar-background {
+  margin: 4px;
+  border-radius: 8px !important;
+}
+
+#vertical-pinned-tabs-container {
+  padding-top: 0px !important;
+  margin-top: 0px !important;
+}
+
+.titlebar-button {
+  padding-top: 8px !important;
+  margin-bottom: 6px !important;
+}
+#tabbrowser-tabbox {
+  padding-top: 0px !important;
+  margin-top: -6px !important;
+}
+
+}
+
+
+#urlbar-zoom-button {
+  display: None !important;
+}
+
+#PanelUI-menu-button{
+  transform: scale(.8,.8); /* adjust scale number to your needs */
+  padding-right: 0px !important;
+  padding-left: 6px !important;
+}
+
+#unified-extensions-button{
+  display: none !important;
+}
+
+/* makes the icons look nicer*/
+.zen-workspace-icon {
+  filter: brightness(0.7) !important;
+  opacity: 1 !important;
+}
+
+.subviewbutton[tooltiptext][active="true"] .zen-workspace-icon {
+  visibility: visible;
+  filter: brightness(0.7) !important;
+  opacity: 1 !important;
+  width: auto !important;
+  height: auto !important;
+  background-color: transparent !important;
+  border-radius: 0;
+  transform: scale(1.4); 
+}
+
+.subviewbutton[tooltiptext]:not([active="true"]):hover .zen-workspace-icon {
+  visibility: visible !important;
+  filter: brightness(0.7) !important;
+  transform: scale(1.2);
+  opacity: 1 !important;
+}
+
+.subviewbutton[tooltiptext]:not([active="true"]):hover
+  .zen-workspace-icon::after {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+#zen-workspaces-button {
+  container-name: workspaces;
+  container-type: inline-size;
+  display: block;
+  width: 100%;
+  max-height: min-content;
+  background: transparent !important;
+}
+
+@container workspaces (width < 100px) {
+  .subviewbutton[tooltiptext]:not([active="true"]):not(:hover) {
+    width: 8px !important;
+    padding: 0px;
+  }
+
+  .subviewbutton[tooltiptext]:not([active="true"]):not(:hover)
+    .zen-workspace-icon {
+    visibility: hidden;
+    position: relative;
+    padding: 0;
+    width: 5px !important;
+    height: 5px !important;
+    padding: 0px;
+  }
+
+  .subviewbutton[tooltiptext]:not([active="true"]) .zen-workspace-icon::after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: visible !important;
+    z-index: 1;
+    padding: 0;
+  }
+}
+
+/* Make the parent container a flexbox to handle resizing */
+#zen-workspaces-button {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  
+}
+
+/* Style for the toolbar buttons */
+#zen-workspaces-button .subviewbutton {
+  flex: 1;
+  min-width: 5px;
+  max-width: 100px;
+  height: auto;
+  padding: 4px;
+  margin: 2px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+/* Adjust icon size relative to the button size */
+#zen-workspaces-button .subviewbutton .zen-workspace-icon {
+  transition: font-size 0.3s ease;
+}
+
+
+
+/* Other icons */
+#PanelUI-menu-button {
+  list-style-image: url("zen-logo.svg") !important;
+  scale: 1.1;
+  filter: brightness(var(--icon-brightness)) !important;
+}
+
+/* sets the linkly Extention to the arc copy link icon */
+#pageAction-urlbar-copy-frame-url_jeffersonscher_com {
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/copy_link.svg") !important;
+  scale: 0.75;
+  filter: brightness(var(--icon-brightness)) !important;
+}
+
+/* sets the expand sidebar svg */
+#zen-sidepanel-button {
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/sidebar.svg") !important;
+  scale: 1;
+  margin-left: 1px !important;
+  filter: brightness(var(--icon-brightness)) !important;
+}
+
+/* sets the history svg */
+#history-panelmenu {
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/archive.svg") !important;
+  scale: 0.9;
+  padding-inline-start: 3px !important;
+  height: 100 !important;
+  filter: brightness(var(--icon-brightness)) !important;
+}
+
+#back-button {
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/back.svg") !important;
+  scale: 1;
+  filter: brightness(var(--icon-brightness)) !important;
+}
+
+#forward-button {
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/next.svg") !important;
+  scale: 1;
+  filter: brightness(var(--icon-brightness)) !important;
+}
+
+#reload-button {
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/refresh.svg") !important;
+  scale: 1.1;
+  filter: brightness(var(--icon-brightness)) !important;
+  
+}
