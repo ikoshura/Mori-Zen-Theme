@@ -63,13 +63,6 @@ You can directly put these on your `userChrome.css` file. Modify it based on you
 /* Personal customization for the Zen Sidebar and Top Bar */
 
 /* Adjusts the top buttons on the Zen Sidebar when expanded */
-#zen-sidebar-top-buttons {
-  :root[zen-sidebar-expanded="true"] & {
-    /* Adjust padding and position of the toolbar buttons */
-    --toolbarbutton-inner-padding: var(--zen-toolbar-button-inner-padding) !important;
-    margin-top: -30.5px; /* Moves the buttons slightly upward */
-  }
-}
 
 /* Controls the width of the Zen Sidebar */
 @media (-moz-bool-pref: "zen.view.sidebar-expanded") {  
@@ -82,5 +75,14 @@ You can directly put these on your `userChrome.css` file. Modify it based on you
 /* Hides the Unified Extensions button */
 #unified-extensions-button {
   display: none !important; /* Removes the button completely from the UI */
+}
+
+/* Not Reccomended */
+#zen-sidebar-top-buttons {
+  :root[zen-sidebar-expanded="true"] & {
+    /* Adjust padding and position of the toolbar buttons */
+    --toolbarbutton-inner-padding: var(--zen-toolbar-button-inner-padding) !important;
+    margin-top: -30.5px; /* Moves the buttons slightly upward */
+  }
 }
 ```
