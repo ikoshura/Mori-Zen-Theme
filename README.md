@@ -77,7 +77,7 @@ You can directly put these on your `userChrome.css` file. Modify it based on you
   display: none !important; /* Removes the button completely from the UI */
 }
 
-/* Not Reccomended */
+/* Not Recommended */
 #zen-sidebar-top-buttons {
   :root[zen-sidebar-expanded="true"] & {
     /* Adjust padding and position of the toolbar buttons */
