@@ -2,6 +2,8 @@
 
 A minimalistic and compact theme for Zen Browser.
 
+![Screenshot 4](https://github.com/ikoshura/Mori-Zen-Theme/blob/main/Assets/Screenshot4.png)
+
 ## Overview
 The default Zen Browser sidebar and top bar take up too much space, so I make Mori to provide a thinner and more compact layout for Zen.
 
