@@ -235,6 +235,7 @@ toolbar .toolbaritem-combined-buttons {
 #urlbar-input {
   font-size: 12px !important;
   line-height: 14px !important;
+  padding-bottom: 3px !important;
 }
 
 /* Center align URL bar text */
