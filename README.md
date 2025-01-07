@@ -52,37 +52,3 @@ To enhance the aesthetic with the Mica effect, you’ll need [MicaForEveryone](h
 | ![Screenshot 3](https://github.com/ikoshura/Mori-Zen-Theme/blob/main/Assets/Screenshot3.png) | Collapsed toolbar |
 | ![Screenshot 4](https://github.com/ikoshura/Mori-Zen-Theme/blob/main/Assets/Screenshot4.png) | Compact Mode |
 
-### My personal additional CSS, potentially break single toolbar mode, but i love this setup...
-
-<img src="https://github.com/user-attachments/assets/c5bf6e14-cea9-4f4a-8445-570869d5097e" alt="Preview" width="500"/>
-
-
-You can directly put these on your `userChrome.css` file. Modify it based on your needs.
-
-```
-/* Personal customization for the Zen Sidebar and Top Bar */
-
-/* Adjusts the top buttons on the Zen Sidebar when expanded */
-
-/* Controls the width of the Zen Sidebar */
-@media (-moz-bool-pref: "zen.view.sidebar-expanded") {  
-  #navigator-toolbox {
-    /* Sets the minimum width of the toolbox to 163px */
-    --zen-toolbox-min-width: 163px !important;
-  }
-}
-
-/* Hides the Unified Extensions button */
-#unified-extensions-button {
-  display: none !important; /* Removes the button completely from the UI */
-}
-
-/* Not Recommended */
-#zen-sidebar-top-buttons {
-  :root[zen-sidebar-expanded="true"] & {
-    /* Adjust padding and position of the toolbar buttons */
-    --toolbarbutton-inner-padding: var(--zen-toolbar-button-inner-padding) !important;
-    margin-top: -30.5px; /* Moves the buttons slightly upward */
-  }
-}
-```
