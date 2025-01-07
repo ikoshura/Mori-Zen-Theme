@@ -2,7 +2,14 @@
     toolbarspring {
         flex: 1 1 100% !important;
         max-width: 50% !important;
+      
     }
+  margin-bottom: 4.7px !important;
+}
+
+/* Adjust top bar size */
+#tabbrowser-tabbox {
+  margin-top: -6px !important;
 }
 
 #userContext-indicator, #userContext-label{
@@ -12,7 +19,7 @@
 }
 
 #urlbar-search-mode-indicator-title {
-  padding-bottom: 7px !important;;
+  padding-bottom: 7px !important;
 }
 
 #urlbar-search-mode-indicator-close, #searchmode-switcher-close {
@@ -34,6 +41,13 @@ toolbar .toolbaritem-combined-buttons {
   border-radius: 15px !important;
   border: none !important;
   background-color: #090909 !important; /*comment this line before activate blurred url bar*/
+}
+
+#urlbar {
+  & .search-panel-one-offs-container .searchbar-engine-one-off-item {
+    box-shadow: none;
+    margin-right: 10px !important;
+  }
 }
 
 /*Blurred url bar (uncomment to activate)*/
@@ -72,22 +86,27 @@ toolbar .toolbaritem-combined-buttons {
   background-color: rgba(0, 0, 0, 0) !important;
 }
 
+
 /* Darker Mica */
-/*#main-window {
+/*
+#main-window {
   background-color: rgba(0, 0, 0, 0.25) !important;
   -moz-appearance: none !important;
   background-image: none !important;
   --zen-main-browser-background: rgba(0, 0, 0, 0.45) !important;
-}
-*/
+}*/
+
 
 /* Button spacing */
 #zen-sidepanel-button,
 #back-button,
 #forward-button,
-#reload-button,
+#reload-button{
+  
+}
+
 #PanelUI-menu-button {
-  padding-bottom: 5px !important;
+  margin-bottom: 5px !important;
 }
 
 /* Compact titlebar buttons */
@@ -151,7 +170,6 @@ toolbar .toolbaritem-combined-buttons {
   opacity: 0.7;
   padding-top: 0px !important;
   transform: scale(.75, .75);
-  padding-bottom: 7px !important;
 
 }
 
@@ -182,7 +200,6 @@ toolbar .toolbaritem-combined-buttons {
   font-size: 12px !important;
   line-height: 14px !important;
   opacity: 0.7;
-  padding-bottom: 8.5px !important;
 }
 
 .urlbar-input div {
@@ -218,7 +235,6 @@ toolbar .toolbaritem-combined-buttons {
 #urlbar-input {
   font-size: 12px !important;
   line-height: 14px !important;
-  padding-bottom: 8.5px !important;
 }
 
 /* Center align URL bar text */
@@ -264,12 +280,6 @@ toolbar .toolbaritem-combined-buttons {
 .titlebar-button {
   padding-top: 8px !important;
   margin-bottom: 6px !important;
-}
-
-/* Adjust tab browser tab box spacing */
-#tabbrowser-tabbox {
-  padding-top: 0px !important;
-  margin-top: -6px !important;
 }
 
 /* Adjust main menu button size and padding */
@@ -437,21 +447,17 @@ toolbar .toolbaritem-combined-buttons {
 
 
 .urlbar-page-action {
-  margin-top: -1px !important;
-  margin-bottom: 5px !important;
   opacity: 0.7;
   padding-top: 0px !important;
 }
 
 #urlbar-zoom-button {
-  padding-bottom: 6px !important;
   background-color: none !important;
   background: none !important;
   padding-top: 0px !important;
 }
 
 #unified-extensions-button {
-  padding-bottom: 5px !important;
   background-color: none !important;
   background: none !important;
   padding-top: 0px !important;
