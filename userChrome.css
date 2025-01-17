@@ -31,10 +31,6 @@
   transform: scale(.75, .75); /* adjust scale to your preference */
 }
 
-toolbar .toolbaritem-combined-buttons {
-  padding-bottom: 5px !important;
-}
-
 
 /* Rounded URL bar */
 #urlbar:is([focused], [open]) > #urlbar-background {
@@ -166,11 +162,16 @@ toolbar .toolbaritem-combined-buttons {
 #identity-permission-box{
   background: none !important;
   background-color: none !important;
-  visibility: visible !important;
   opacity: 0.7;
-  padding-top: 0px !important;
   transform: scale(.75, .75);
 
+}
+
+/* Specific icon adjustments 2*/
+#notification-popup-box{
+  opacity: 0.7;
+  margin-top: 2px !important;
+  transform: scale(.75, .75);
 }
 
 #tracking-protection-icon-container {
