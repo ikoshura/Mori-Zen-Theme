@@ -3,9 +3,6 @@
         flex: 1 1 100% !important;
         max-width: 50% !important;
     }
-    #urlbar-container {
-        flex: 0 0 var(--zen-toolbox-min-width, 250px) !important;
-    }
   margin-bottom: 4.7px !important;
 }
 
